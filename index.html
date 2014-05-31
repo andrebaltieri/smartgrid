@@ -1,21 +1,25 @@
 <html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-    </head>
-    <body>
-        <div class="smart-grid"></div>
-        
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="src/js/jquery.smartgrid.js"></script>
-        <script>
-            $(document).ready(function() {
-                $(".smart-grid").smartGrid({
-                    columns: [ "Id","Name" ]
-                });          
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="smart-grid"></div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="src/js/jquery.smartgrid.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".smart-grid").smartGrid({
+                columns: [
+                    { name: 'Id', type: 'int' },
+                    { name: 'Name', type: 'string' },
+                    { name: 'Birth', type: 'date' }
+                ]
             });
-        </script>
-    </body>
-    
+        });
+    </script>
+</body>
+
 </html>
